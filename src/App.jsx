@@ -11,7 +11,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const key = "96ac50d127d44e1b9f2134845241409";
-  const API_URL = "http://api.weatherapi.com/v1/current.json"; 
+  const API_URL = "https://api.weatherapi.com/v1/current.json"; 
   const getWeatherInfo = async () => {
     setLoading(true);
     const url = `${API_URL}?key=${key}&q=${data}&aqi=yes`;
